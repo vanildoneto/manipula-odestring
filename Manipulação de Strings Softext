@@ -1,0 +1,65 @@
+Função de manipulação *FEITO EM LINGUAGUEM C*
+
+PRIMEIRO CÓDIGO: Mostrando tamanho das strings
+
+#include <stdio.h>
+#include <string.h>
+#define N 50
+int main(void){
+    char str1[N];
+    char str2[N];
+    
+    gets(str1);
+    gets(str2);
+    
+    printf("Tamanhos: %d e %d, respectivamente. ", strlen(str1), strlen(str2));
+   
+}
+
+SEGUNDO CÓDIGO: Mostrando string em letras maiúsculas
+
+#include <stdio.h>
+#include <string.h>
+#define N 50
+int main(void){
+    char str1[N];
+    char str2[N];
+    
+    gets(str1);
+    gets(str2);
+    
+    printf("Em letra maiuscula: %s", strupr(str2));
+    
+}    
+
+TERCEIRO CÓDIGO: COMPARANDO NOMES
+
+#include <stdio.h>
+#include <string.h>
+#define N 50
+int main(void){
+    char str1[N];
+    char str2[N];
+    
+     printf("Digite nome 1");
+     scanf("%c", str1);
+     
+     
+     printf("Digite nome 2");
+     scanf("%c", str2);
+     
+     
+     if(strcmp(str1, str2) == 0) {
+        printf("Nomes diferentes"); 
+     }
+     else {
+        printf("Nomes iguais"); 
+     }
+     
+}    
+     
+
+
+
+
+
